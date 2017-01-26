@@ -1,0 +1,44 @@
+[vagrant]
+192.168.33.12
+
+[vagrant:vars]
+vm=1
+user=vagrant
+project_path=/home/vagrant/hello-world-web
+venv_path=/home/vagrant/venv
+django_requirements_file=requirements/development.txt
+django_settings="settings.development"
+use_letsencrypt=False
+pg_db=hello_world
+pg_user=vagrant
+pg_password=vagrant
+
+[production]
+127.0.0.1
+
+[production:vars]
+vm=0
+user=ubuntu
+project_path=/home/ubuntu/hello-world-web
+venv_path=/home/ubuntu/venv
+use_letsencrypt=True
+letsencrypt_email=backend+hello-world@fueled.com
+django_requirements_file=requirements.txt
+django_settings="settings.production"
+domain_name: hello_world.com
+repo_version: prod
+
+[dev]
+127.0.0.1
+
+[dev:vars]
+vm=0
+user=ubuntu
+project_path=/home/ubuntu/hello-world-web
+venv_path=/home/ubuntu/venv
+use_letsencrypt=True
+letsencrypt_email=backend+hello-world@fueled.com
+django_requirements_file=requirements.txt
+django_settings="settings.production"
+domain_name: hello_world.com
+repo_version: master

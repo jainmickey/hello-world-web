@@ -1,0 +1,6 @@
+---
+project_name: hello_world
+project_repo_url: git@github.com:jainmickey/hello-world-web.git
+project_repo_remote: origin
+pg_gis: False
+sass_with_django_compressor: False
