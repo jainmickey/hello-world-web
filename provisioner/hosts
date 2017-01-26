@@ -25,8 +25,8 @@ use_letsencrypt=True
 letsencrypt_email=backend+hello-world@fueled.com
 django_requirements_file=requirements.txt
 django_settings="settings.production"
-domain_name: hello_world.com
-repo_version: prod
+domain_name: matador-dev.fueled.com
+repo_version: master
 
 [dev]
 127.0.0.1
@@ -40,5 +40,5 @@ use_letsencrypt=True
 letsencrypt_email=backend+hello-world@fueled.com
 django_requirements_file=requirements.txt
 django_settings="settings.production"
-domain_name: hello_world.com
+domain_name: matador-dev.fueled.com
 repo_version: master

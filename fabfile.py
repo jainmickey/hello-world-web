@@ -111,8 +111,8 @@ def createapp(appname):
 def prod():
     env.host_group = 'production'
     env.remote = 'origin'
-    env.branch = 'prod'
-    env.hosts = ['prod.hello_world.com']
+    env.branch = 'master'
+    env.hosts = ['matador-dev.fueled.com']
     env.dotenv_path = '{project_dir}/.env'.format(project_dir=env.project_dir)
     env.config_setter = fab.run
 
@@ -120,7 +120,7 @@ def dev():
     env.host_group = 'dev'
     env.remote = 'origin'
     env.branch = 'master'
-    env.hosts = ['dev.hello_world.com']
+    env.hosts = ['matador-dev.fueled.com']
     env.dotenv_path = '{project_dir}/.env'.format(project_dir=env.project_dir)
     env.config_setter = fab.run
 
