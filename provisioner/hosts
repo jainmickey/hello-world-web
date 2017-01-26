@@ -1,5 +1,5 @@
 [vagrant]
-127.0.0.1
+192.168.2.250
 
 [vagrant:vars]
 vm=1
@@ -29,7 +29,7 @@ domain_name="matador-dev.fueled.com"
 repo_version="master"
 
 [dev]
-127.0.0.1
+matador-dev.fueled.com
 
 [dev:vars]
 vm=0
